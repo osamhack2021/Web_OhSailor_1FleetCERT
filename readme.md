@@ -50,7 +50,7 @@ $ yarn start or npm run start
 - song sung youb (ssyoub0327@daum.net), Github Id: Song-Sungyoub
 
 ## 저작권 및 사용권 정보 (Copyleft / End User License)
- * [MIT](https://github.com/osam2020-WEB/Sample-ProjectName-TeamName/blob/master/license.md)
+ * [MIT](https://github.com/osamhack2021/Web_OhSailor_1FleetCERT/blob/master/license.md)
 
 This project is licensed under the terms of the MIT license.
 
