@@ -7,7 +7,7 @@
 
 프로젝트명 또는 프로젝트 로고 이미지 **(택1)**
 
-## 프로잭트 소개
+## 프로젝트 소개
 - 설명 기입
 
 
@@ -47,8 +47,7 @@ $ yarn start or npm run start
  샘플 에디터 [https://stackedit.io/app#](https://stackedit.io/app#)
  
 ## 팀 정보 (Team Information)
-- hong gil dong (hong999@gmail.com), Github Id: gildong999
-- kim su ji (suji999@gmail.com), Github Id: suji999
+- song sung youb (ssyoub0327@daum.net), Github Id: Song-Sungyoub
 
 ## 저작권 및 사용권 정보 (Copyleft / End User License)
  * [MIT](https://github.com/osam2020-WEB/Sample-ProjectName-TeamName/blob/master/license.md)
