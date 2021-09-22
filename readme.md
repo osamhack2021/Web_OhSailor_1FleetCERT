@@ -24,8 +24,8 @@ C3R71 로고에 오! 수병을 곁들인 로고를 추구
 ## 기술 스택 (Technique Used) 
 ### Server(back-end)
  - PHP7.0, Python3.9 
- - express, lar avel, sptring boot 등 사용한 프레임워크 
- - DB 등 사용한 다른 프로그램 
+ - laravel 프레임워크(PHP) 
+ - MySQL (DBMS) 
  
 ### Front-end
  -  HTML5, CSS3, JavaScript를 이용한 개발
