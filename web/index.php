@@ -4,6 +4,9 @@
 		echo '<script>location.href="./login";</script>';
 	}
 ?>
+<!--나중에 지울 부분-->
+<script>location.href="/ohsailor";</script>
+<!---->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
