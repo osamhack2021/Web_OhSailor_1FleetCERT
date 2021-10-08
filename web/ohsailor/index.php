@@ -1,3 +1,9 @@
+<?php
+        session_start();
+        if(!$_SESSION['userid']){
+                echo '<script>location.href="./login";</script>';
+        }
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -7,6 +13,31 @@
     <title>오!수병 | 메인</title>
 </head>
 <body>
-    
+	
+	<!--게시판 부분 미들-->
+    <div style="width:60%;">
+		<div style="float:left;">
+			<div style="float:left;">
+				번호	
+			</div>
+			<div style="float:left;">
+				제목
+			</div>
+			<div style="float:right;">
+				날짜
+			</div>
+		</div>
+		<div style="float:left;">
+            <div style="float:left;">
+                번호    
+            </div>
+            <div style="float:left;">
+                제목
+            </div>
+            <div style="float:right;">
+                날짜
+            </div>
+        </div>
+	</div>
 </body>
 </html>
