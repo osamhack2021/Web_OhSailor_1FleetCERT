@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if($_SESSION['userid']){
+        echo '<script>location.href="/";</script>';
+    }
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
