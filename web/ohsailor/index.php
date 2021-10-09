@@ -1,9 +1,8 @@
-
 <?php
         session_start();
         if(!$_SESSION['userid']){
-                echo '<script>location.href="./login";</script>';
-        }
+                echo '<script>location.href="/login";</script>';
+        }else{
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -32,7 +31,7 @@
 			</div>
         </div><hr>
         <div style="float:left;width:100%;">
-            <div style="float:left;width:30px;">
+            <div style="float:left;width:30px;text-align:center;">
                 1
             </div>
             <div style="float:left;padding-left:15px;">
@@ -46,7 +45,7 @@
             </div>
         </div>
 		<div style="float:left;width:100%;">
-            <div style="float:left;width:30px;">
+            <div style="float:left;width:30px;text-align:center;">
                 2
             </div>
             <div style="float:left;padding-left:15px;">
@@ -62,3 +61,6 @@
     </div>
 </body>
 </html>
+<?php
+}
+?>
