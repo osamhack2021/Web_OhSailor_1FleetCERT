@@ -37,7 +37,7 @@ FF6F61
 
 ## 설치 안내 (Installation Process)
 ```bash
-$ git clone git주소
+$ git clone git@github.com:osamhack2021/Web_OhSailor_1FleetCERT.git
 $ yarn or npm install
 $ yarn start or npm run start
 ```
