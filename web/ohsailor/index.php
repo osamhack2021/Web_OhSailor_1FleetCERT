@@ -56,7 +56,7 @@
                 </thead>
                 <tbody>
                     <?php
-                        $query ="select * from evaluation_board order by number desc";
+                        $query ="select * from evaluation_board order by num desc";
                         $result = $connect->query($query);
                         $total = mysqli_num_rows($result);
 
