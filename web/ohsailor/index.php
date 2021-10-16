@@ -3,6 +3,7 @@
         if(!$_SESSION['userid']){
                 echo '<script>location.href="/login";</script>';
         }else{
+            $connect = mysqli_connect('localhost', 'dbadmin', 'tooringa', 'ohsailor') or die ("connect fail");
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -54,12 +55,22 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php
+                        $query ="select * from evaluation_board order by number desc";
+                        $result = $connect->query($query);
+                        $total = mysqli_num_rows($result);
+
+                        while($rows = mysqli_fetch_assoc($result)){
+                    ?>
                     <tr style="cursor:pointer;" onclick="">
-                        <th scope="row">1</th>
-                        <td>오늘 급식 최고!</td>
-                        <td>익명</td>
-                        <td>2021.10.09.</td>
+                        <th scope="row"><?php echo $rows['num']?></th>
+                        <td><?php echo $rows['title']?></td>
+                        <td><?php echo $rows['name']?></td>
+                        <td><?php echo $rows['date']?></td>
                     </tr>
+                    <?php
+                        }
+                    ?>
                     <tr style="cursor:pointer;" onclick="">
                         <th scope="row">2</th>
                         <td>미역국에 조미료 줄여주세요.</td>

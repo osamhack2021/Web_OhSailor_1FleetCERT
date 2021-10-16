@@ -1,0 +1,2 @@
+insert into evaluation_board (num, title, content, id, name, menu, date, hit) 
+                        values(null, '$title', '$content', '$date',0, '$id', '$pw')
