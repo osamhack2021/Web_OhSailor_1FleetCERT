@@ -64,6 +64,14 @@
             </div>
             
         </div>
+        <div class="container">
+            <p>댓글</p>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" style="float:left;">
+                <label for="floatingInput">Comments</label>
+                <button type="button" class="btn btn-secondary" style="float:right;">Submit</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
