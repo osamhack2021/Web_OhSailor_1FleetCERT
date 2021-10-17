@@ -71,12 +71,6 @@
                     <?php
                         }
                     ?>
-                    <tr style="cursor:pointer;" onclick="">
-                        <th scope="row">2</th>
-                        <td>미역국에 조미료 줄여주세요.</td>
-                        <td>익명</td>
-                        <td>2021.10.09.</td>
-                    </tr>
                 </tbody>
             </table>
             <nav aria-label="Page navigation example">
