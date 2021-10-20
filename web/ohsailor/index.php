@@ -87,7 +87,7 @@
                 </ul>
             </nav>
             <div class="container" style="width:100%;">
-                <button type="button" class="btn btn-outline-secondary" onclick="" style="float:right;">글쓰기</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="javascript:href.location='./write'" style="float:right;">글쓰기</button>
             </div>
         </div>
     </div>
