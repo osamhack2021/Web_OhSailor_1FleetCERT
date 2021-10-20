@@ -5,7 +5,7 @@
         }else{
             $num = $_GET['num'];
             $connect = mysqli_connect('localhost', 'dbadmin', 'tooringa', 'ohsailor') or die ("connect fail");
-            $query = "select * from board where num =$num";
+            $query = "select * from evaluation_board where num =$num";
             $result = $connect->query($query);
             $rows = mysqli_fetch_assoc($result);
 ?>
