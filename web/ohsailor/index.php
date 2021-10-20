@@ -15,7 +15,7 @@
     <title>오!수병 | 메인</title>
 </head>
 <body>
-<header class="p-3 bg-red text-white">
+<header class="p-3 bg-dark text-white">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -62,7 +62,7 @@
 
                         while($rows = mysqli_fetch_assoc($result)){
                     ?>
-                    <tr style="cursor:pointer;" onclick="">
+                    <tr style="cursor:pointer;" onclick="javascript:location.href='./view?num=<?php echo $rows['num']?>'">
                         <th scope="row"><?php echo $rows['num']?></th>
                         <td><?php echo $rows['title']?></td>
                         <td><?php echo $rows['name']?></td>

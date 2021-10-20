@@ -3,7 +3,11 @@
         if(!$_SESSION['userid']){
                 echo '<script>location.href="/login";</script>';
         }else{
-            //$connect = mysqli_connect('localhost', 'dbadmin', 'tooringa', 'ohsailor') or die ("connect fail");
+            $num = $_GET['num'];
+            $connect = mysqli_connect('localhost', 'dbadmin', 'tooringa', 'ohsailor') or die ("connect fail");
+            $query = "select * from board where num =$num";
+            $result = $connect->query($query);
+            $rows = mysqli_fetch_assoc($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,20 +51,20 @@
             <div style="text-align:left; width:100%;">
                 <div>
                     <div style="width:100%;float:left;">
-                        <span style="float:left; font-size:20px;">여기가 제목입니다.</span>
+                        <span style="float:left; font-size:20px;"><?php echo $rows['title']?></span>
                         <span style="float:right;">분류</span>
                     </div>
                     <br>
                     <div style="width:100%;float:left;">
                         <span style="float:left;">
-                            작성자
+                            익명
                         </span>
                         <span style="float:right;">
-                            날짜
+                        <?php echo $rows['date']?>
                         </span>
                     </div>
                 </div><br style="height:10px;"><hr style="width:100%;">
-                <p>여기가 본문입니다.</p>
+                <p><?php echo $rows['content']?></p>
             </div>
             
         </div>
